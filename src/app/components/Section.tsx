@@ -11,7 +11,7 @@ const Section = () => {
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7">
-          <h1 className="text-[#558344] mb-4 text-4xl marker:lg:text-6xl font-extrabold">
+          <h1 className="text-[#558344] mb-4 text-4xl marker:lg:text-6xl font-semibold">
             {" "}
             <span className="">Hello, i&apos;m </span>
             <br />
@@ -19,7 +19,7 @@ const Section = () => {
               sequence={["Ceyda", 3000, "Computer Science Student", 3000]}
               wrapper="span"
               speed={10}
-              style={{ display: "inline-block" }}
+              style={{ display: "inline-block", fontWeight: 700, }}
               repeat={Infinity}
             />
           </h1>
