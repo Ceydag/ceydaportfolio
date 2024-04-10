@@ -9,18 +9,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-slate-200">
       <Header/>
-      <div className="mt-60 container mx-auto px-12 py-4">
+      <div className="mt-40 container mx-auto px-12 py-4">
         <Section/>
-        <div className="my-80" /> {}
-        <section className="pb-32">
+        <div className="my-28" /> {}
+        <div className="space-y-20 sm:space-y-40">
+        <section className="sm:pb-72">
         <AboutSection/>
-        <div className="my-60"></div>
         </section>
-      <div className="my-52">
+        <section className="pb-20">
       <ProjectsSection/>
-        </div>
-      
+      </section>
       </div>
+      </div >
+      <br />
       <Footer/>
     </main>
   );

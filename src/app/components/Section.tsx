@@ -23,7 +23,7 @@ const Section = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-gray-950 text-lg lg:text-xl">
+          <p className="text-gray-800 text-lg lg:text-xl font-semibold">
             {" "}
             I am a second year Computer Science student at Hogeschool Rotterdam.
             I am passionate about software development and I am always looking

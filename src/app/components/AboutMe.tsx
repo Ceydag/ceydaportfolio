@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 text-gray-900">
+      <ul className="list-disc pl-2 text-gray-900 font-semibold "style={{ listStyleType: '"- "' }} >
         <li>Node.js</li>
         <li>Python</li>
         <li>PostgreSQL</li>
@@ -24,7 +24,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2 text-gray-900">
+      <ul className="list-disc pl-2 text-gray-900 font-semibold "style={{ listStyleType: '"- "' }}>
         <li>Computer Science, Hogeschool Rotterdam (2021-2026)</li>
       </ul>
     ),
@@ -59,16 +59,16 @@ const handleTabChange = (id: string) => {
   }
   return (
     <section className="text-gray-800" id="about">
-      <div className="h-96 overflow-">
+      <div className="md:h-72">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image alt= "" src="/images/about-me.png" width={500} height={500} layout="fixed" className="overflow-auto flex-grow" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-[#558344] mb-4">About Me</h2>
-          <p className="text-gray-900 lg:text-lg">
+          <p className="text-gray-900 lg:text-lg  font-semibold">
             Currently studying Computer Science at Hogeschool Rotterdam. I am passionate about learning new technologies and building software that solves real-world problems. I am a quick learner and a team player who is always looking to improve my skills and help others grow. 
           </p>
           <div className="flex flex-row justify-start mt-8 text-gray-950">
-            <TabButton
+            <TabButton 
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
@@ -83,7 +83,7 @@ const handleTabChange = (id: string) => {
               Education{" "}
             </TabButton>
           </div >
-          <div className="mt-8 flex-grow overflow-auto">
+          <div className="mt-8 mb-8 flex-grow overflow-auto">
             {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
